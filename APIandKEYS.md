@@ -51,3 +51,16 @@ Endpoint: the URL you send requests to
 Token: a chunk of text (roughly 3/4 of a word) that models read and write, and what you are billed for
 Rate limit: a cap on how many requests or tokens you can use per minute
 Exponential backoff: waiting longer after each failed retry
+
+## THINGS TO NOTE:
+Command	                 Purpose
+mkdir	                Creates a project directory.
+cd	                    Moves into that directory.
+python3 -m venv .venv	Creates an isolated Python environment.
+source .venv/bin/activate	Activates the environment.
+pip install anthropic	Installs the official Anthropic Python SDK.
+
+NOTES:**Headers provide information about the request.**
+1. json.dumps(payload) converts the Python dictionary into a JSON string.
+2. .encode("utf-8") converts that string into bytes for the HTTP request.
+Why bytes? Because HTTP request bodies are transmitted as bytes, not as native Python dictionaries.
