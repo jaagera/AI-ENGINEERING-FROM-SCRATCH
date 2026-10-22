@@ -1,0 +1,1 @@
+Every AI model is just matrix math wearing a fancy hat.
