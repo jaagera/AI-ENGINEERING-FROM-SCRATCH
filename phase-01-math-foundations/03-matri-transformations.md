@@ -1,6 +1,7 @@
 > A matrix is a machine that reshapes space. Learn what it does to every point, and you understand the whole transformation.
 
 * An eigenvector is a non-zero vector whose direction does not change when a square matrix (linear transformation) is applied to it.
+
 ### Step 1: Transformation matrices from scratch (Python)
 import math
 

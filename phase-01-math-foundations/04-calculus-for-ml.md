@@ -1,7 +1,7 @@
 > Derivatives tell you which way is downhill. That is all a neural network needs to learn.
 ** Each weight is known as a "KNOB" **
 Without calculus, training a neural network would mean trying random changes and hoping for the best.
-> DERIVATIVE: Measures the rate of change. ***NOTE: Training a neural network is optimization.
+> DERIVATIVE: Measures the rate of change. ***NOTE: Training a neural network is optimization(i.e; its a mathematical process).
 
 DIFF. BTW NUMERICAL & ANALYTICAL DERIVATIVES
 Numerical: are slower but work for any function

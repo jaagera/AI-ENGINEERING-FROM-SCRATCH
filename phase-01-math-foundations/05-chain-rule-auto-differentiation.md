@@ -14,3 +14,15 @@ An autograd engine needs three things:
     02. Graph recording. Every operation records its inputs and the local gradient function.
     03. Backward pass. Topological sort the graph, then walk it in reverse, applying the chain rule at each node. 
 ## Tagline: “The chain rule is the engine behind every neural network that learns.”
+
+>Each Value stores:
+data: the number
+grad: its gradient (starts at 0)
+_prev: which Values produced it
+_backward: a small function that knows how to pass gradients to its inputs
+
+
+| Mode | Seed | Direction | Best when |
+|------|------|-----------|-----------|
+| Forward | $dx_i/dx_i = 1$ | Input to output | Few inputs, many outputs |
+| Reverse | $dy/dy = 1$ | Output to input | Many inputs, few outputs (neural nets) |
